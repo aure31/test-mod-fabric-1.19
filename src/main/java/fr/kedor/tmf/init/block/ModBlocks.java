@@ -5,10 +5,8 @@ import fr.kedor.tmf.init.item.ModItemsGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.mininglevel.v1.FabricMineableTags;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Material;
-import net.minecraft.block.OreBlock;
+import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -25,7 +23,7 @@ public class ModBlocks {
             UniformIntProvider.create(3,7)), ModItemsGroup.MY_GROUP);
 
     public static final Block DEEPSLATE_TINANIUM_ORE = registerBlock("deepslate_titanium_ore",
-            new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
+            new OreBlock(FabricBlockSettings.of(new Material(MapColor.DEEPSLATE_GRAY,false,true,false,false,false,false, PistonBehavior.BLOCK)).strength(4f).requiresTool(),
                     UniformIntProvider.create(3,7)), ModItemsGroup.MY_GROUP);
 
 

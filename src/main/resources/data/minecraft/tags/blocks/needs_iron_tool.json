@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "tmf:titanium_block",
+    "tmf:titanium_ore",
+    "tmf:deepslate_titanium_ore"
+  ]
+}
