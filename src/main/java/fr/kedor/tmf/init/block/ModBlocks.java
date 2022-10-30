@@ -1,4 +1,4 @@
-package fr.kedor.tmf.init;
+package fr.kedor.tmf.init.block;
 
 import net.fabricmc.fabric.api.mininglevel.v1.FabricMineableTags;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;

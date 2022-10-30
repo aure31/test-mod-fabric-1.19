@@ -1,6 +1,6 @@
 package fr.kedor.tmf;
 
-import fr.kedor.tmf.init.ModItems;
+import fr.kedor.tmf.init.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,6 +12,8 @@ public class TMF implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        ModItems.registerAll();
+
+        ModItems.registerModItem();
+
     }
 }
