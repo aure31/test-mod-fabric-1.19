@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern" : [
+    " - ",
+    "#^#",
+    " # "
+  ],
+  "key": {
+    "#": { "item": "minecraft:redstone" },
+    "^": { "item": "minecraft:redstone_lamp" },
+    "-": { "item": "minecraft:lever"}
+  },
+  "result": {
+    "item": "tmf:manual_lamp"
+  }
+}

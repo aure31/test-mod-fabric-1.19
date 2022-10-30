@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=true": { "model": "tmf:block/manual_lamp_on"},
+    "lit=false": { "model": "tmf:block/manual_lamp_off"}
+  }
+}
