@@ -2,5 +2,9 @@
   "item.tmf.raw_titanium": "Raw Titanium",
   "item.tmf.titanium_ingot": "Titanium Ingot",
 
+  "block.tmf.titanium_block": "Titanium Block",
+  "block.tmf.titanium_ore": "Titanium Ore",
+  "block.tmf.deepslate_titanium_ore": "Deepslate Titanium Ore",
+
   "itemGroup.tmf.mygroup": "Group of Test mods fabric"
 }
