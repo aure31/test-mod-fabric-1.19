@@ -6,6 +6,7 @@
   "block.tmf.titanium_block": "Titanium Block",
   "block.tmf.titanium_ore": "Titanium Ore",
   "block.tmf.deepslate_titanium_ore": "Deepslate Titanium Ore",
+  "block.tmf.jumpy_block": "Jumpy Block",
 
   "itemGroup.tmf.mygroup": "Group of Test mods fabric"
 }

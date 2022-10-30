@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern" : [
+    "*-*",
+    "#^#",
+    "*#*"
+  ],
+  "key": {
+    "#": { "item": "minecraft:stone" },
+    "^": { "item": "minecraft:piston" },
+    "*": { "item": "minecraft:iron_nugget"},
+    "-": { "item": "minecraft:slime_block"}
+  },
+  "result": {
+    "item": "tmf:jumpy_block"
+  }
+}

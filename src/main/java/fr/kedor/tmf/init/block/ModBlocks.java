@@ -1,6 +1,7 @@
 package fr.kedor.tmf.init.block;
 
 import fr.kedor.tmf.TMF;
+import fr.kedor.tmf.init.block.custom.JumpyBlock;
 import fr.kedor.tmf.init.item.ModItemsGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.mininglevel.v1.FabricMineableTags;
@@ -23,9 +24,15 @@ public class ModBlocks {
             UniformIntProvider.create(3,7)), ModItemsGroup.MY_GROUP);
 
     public static final Block DEEPSLATE_TINANIUM_ORE = registerBlock("deepslate_titanium_ore",
-            new OreBlock(FabricBlockSettings.of(new Material(MapColor.DEEPSLATE_GRAY,false,true,false,false,false,false, PistonBehavior.BLOCK)).strength(4f).requiresTool(),
-                    UniformIntProvider.create(3,7)), ModItemsGroup.MY_GROUP);
+            new OreBlock(FabricBlockSettings.of(new Material(MapColor.DEEPSLATE_GRAY,false,true,
+                    false,false,false,false,
+                    PistonBehavior.BLOCK)).strength(4f).requiresTool(), UniformIntProvider.create(3,7)),
+                    ModItemsGroup.MY_GROUP);
 
+    public static final Block JUMPY_BLOCK = registerBlock("jumpy_block",
+            new JumpyBlock(FabricBlockSettings.of(new Material(MapColor.OAK_TAN,false,true,
+                    false,false,true,false,
+                    PistonBehavior.IGNORE)).strength(2f)),ModItemsGroup.MY_GROUP);
 
     private static Block registerBlock(String name, Block block, ItemGroup tab){
         registerBlockItem(name, block, tab);
