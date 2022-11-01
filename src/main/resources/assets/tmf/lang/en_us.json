@@ -2,12 +2,14 @@
   "item.tmf.raw_titanium": "Raw Titanium",
   "item.tmf.titanium_ingot": "Titanium Ingot",
   "item.tmf.eight_ball": "Eight Ball",
+  "item.tmf.rice": "Rice",
 
   "block.tmf.titanium_block": "Titanium Block",
   "block.tmf.titanium_ore": "Titanium Ore",
   "block.tmf.deepslate_titanium_ore": "Deepslate Titanium Ore",
   "block.tmf.jumpy_block": "Jumpy Block",
   "block.tmf.manual_lamp": "Manual Lamp",
+  "block.tmf.rice_crop": "Rice Crop",
 
   "itemGroup.tmf.mygroup": "Group of Test mods fabric"
 }

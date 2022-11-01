@@ -3,6 +3,7 @@ package fr.kedor.tmf.init.block;
 import fr.kedor.tmf.TMF;
 import fr.kedor.tmf.init.block.custom.JumpyBlock;
 import fr.kedor.tmf.init.block.custom.ManualLampBlock;
+import fr.kedor.tmf.init.block.custom.RiceCropBlock;
 import fr.kedor.tmf.init.item.ModItemsGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.mininglevel.v1.FabricMineableTags;
@@ -43,6 +44,14 @@ public class ModBlocks {
             new ManualLampBlock(FabricBlockSettings.of(Material.GLASS).strength(1f).sounds(BlockSoundGroup.GLASS).
                     luminance(state -> state.get(ManualLampBlock.LIT) ? 15 : 0)), ModItemsGroup.MY_GROUP);
 
+    public static final Block RICE_CROP = registerBlockWithoutItem("rice_crop",
+            new RiceCropBlock(FabricBlockSettings.of(Material.REPLACEABLE_UNDERWATER_PLANT).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)));
+
+
+    // methode d'enregistrement des block sans Item
+    private static Block registerBlockWithoutItem(String name, Block block){
+        return Registry.register(Registry.BLOCK, new Identifier(TMF.MOD_ID, name),block);
+    }
 
     // methode d'enregistrement des block
     private static Block registerBlock(String name, Block block, ItemGroup tab){

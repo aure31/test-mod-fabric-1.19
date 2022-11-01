@@ -1,7 +1,9 @@
 package fr.kedor.tmf.init.item;
 
 import fr.kedor.tmf.TMF;
+import fr.kedor.tmf.init.block.ModBlocks;
 import fr.kedor.tmf.init.item.custom.EightBallItem;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -15,6 +17,8 @@ public class ModItems {
 
     public static final Item EIGHT_BALL = registerItem("eight_ball",
             new EightBallItem(new Item.Settings().group(ModItemsGroup.MY_GROUP).maxCount(1)));
+    public static final Item RICE = registerItem("rice",
+            new AliasedBlockItem(ModBlocks.RICE_CROP, new Item.Settings().group(ModItemsGroup.MY_GROUP)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM,new Identifier(TMF.MOD_ID,name),item);
